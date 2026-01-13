@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title | default: site.title }}</title>
+</head>
+<body>
+
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/manifesto.html">Manifesto</a> |
+      <a href="/posts.html">Posts</a> |
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+  
+  <footer>
+    <p>
+      © {{ site.time | date: "%Y" }} NEPERO
+    </p>
+  </footer>
+
+</body>
+</html>
