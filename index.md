@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## Welcome to $$Ne^{P_e}/R_o$$
+## Welcome to $Ne^{P_e}/R_o$
 
 **Ne**twork of **P**r**e**carious **R**esearchers **o**rganization.
 
