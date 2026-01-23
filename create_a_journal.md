@@ -1,4 +1,6 @@
 ---
 layout: default
-title: How to create a journal
+title: Create a journal
 ---
+
+## How to create a journal
