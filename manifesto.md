@@ -7,20 +7,20 @@ title: Manifesto
 
 ## NEPERO Manifesto: reclaim science from the bottom
 
-You are a precarious researcher.
+We are a precarious researchers.
 
-You move. You restart. You adapt.  
-And because you move, you are rarely allowed to decide.
+We move. We restart. We adapt.
+And because we move, we are rarely allowed to decide.
 
-Yet without your work, research would not function. A large part of experiments, calculations, writing, reviewing, and teaching is done by people on temporary contracts. This contradiction is structural. It is not a personal failure. And it will not resolve itself.
+Yet without our work, research would not function. The majority of experiments, calculations, writing, reviewing, and teaching is done by people on temporary contracts. This contradiction is structural. It is not a personal failure. And it will not resolve itself.
 
 ### Why we exist
 
 We are NEPERO, an association of precarious researchers who refuse to remain invisible while keeping the system alive.
 
-We want a concrete way to exist **as researchers**, not as replaceable labor. We want tools that let us act together, not survive alone. And we start where science actually moves: **how knowledge is published, shared, and made legitimate**.
+We want a concrete way to exist **as researchers**, not just as replaceable labor. We want tools that let us act together, not just survive. We start from where science stems: **how knowledge is published, shared, and made legitimate**.
 
-This is why this is also an editorial initiative. The current publishing system has deep limitations that shape how science is currently getting done.
+This is why NEPERO is also an editorial initiative. The current publishing system has deep limitations that shape how science is currently getting done.
 
 ### The core idea: publishing is power
 
@@ -36,7 +36,7 @@ Our main instrument of independence—scientific, economic, and eventually polit
 ### How change can happen
 These journals are not meant to compete with profit-driven ones at the start.
 
-They create **niches**.
+Their objective is to create **niches**.
 
 Places where different questions can be asked.   
 Where unfinished ideas are allowed to exist.  
