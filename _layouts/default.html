@@ -15,21 +15,42 @@
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
+	<link rel="stylesheet"
+        href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
+
+
+
 <body>
 
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <a href="{{ '/' | relative_url}}">Home</a> |
-      <a href="{{ '/manifesto.html' | relative_url}}">Manifesto</a> |
-      <a href="{{ '/create_a_journal.html' | relative_url}}">Create a Journal</a> |
-      <a href="{{ '/connections.html' | relative_url}}">Connections</a> |
-      <a href="{{ '/resources.html' | relative_url}}">Resources</a> |
-      <a href="{{ '/posts.html' | relative_url}}">Posts</a> |
-      <a href="{{ '/join_us.html' | relative_url}}">Join us</a> |
+  <header class="site-header">
+   <div class="header-inner">
+   
+  	<a href="{{ '/' | relative_url }}" class="site-logo">
+    		<img src="{{ site.logo | relative_url }}"
+         		alt="{{ site.title }} logo">
+        </a>
+        
+        
+    <button class="nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+      ☰
+    </button>
+    
+    
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url}}">Home</a>
+      <a href="{{ '/manifesto.html' | relative_url}}">Manifesto</a>
+      <a href="{{ '/create_a_journal.html' | relative_url}}">Create a Journal</a>
+      <a href="{{ '/connections.html' | relative_url}}">Connections</a>
+      <a href="{{ '/resources.html' | relative_url}}">Resources</a>
+      <a href="{{ '/posts.html' | relative_url}}">Posts</a>
+      <a href="{{ '/join_us.html' | relative_url}}">Join us</a> 
+      
     </nav>
-    <hr>
+    
+    </div>
   </header>
 
   <main>
@@ -43,4 +64,37 @@
   </footer>
 
 </body>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const nav = document.querySelector('.site-nav');
+  const toggle = document.querySelector('.nav-toggle');
+
+  function updateNavMode() {
+    // Ensure nav is visible for measurement
+    header.classList.remove('is-collapsed');
+    nav.classList.remove('open');
+
+    const links = Array.from(nav.children);
+    if (links.length === 0) return;
+
+    const firstTop = links[0].offsetTop;
+    const wrapped = links.some(link => link.offsetTop > firstTop);
+
+    header.classList.toggle('is-collapsed', wrapped);
+  }
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+
+  window.addEventListener('resize', updateNavMode);
+  window.addEventListener('load', updateNavMode);
+</script>
+
+
 </html>

@@ -1,0 +1,80 @@
+
+.site-header {
+  position: relative; /* REQUIRED for dropdown positioning */
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ 
+.site-nav a {
+  text-decoration: none;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+.site-nav a:not(:last-child) {
+  border-right: 1px solid #999;
+}
+
+
+ 
+ /* Toggle button (hidden on desktop) */
+.nav-toggle {
+  display: none;
+}
+
+/* ===== Collapsed (mobile) navigation ===== */
+
+.site-header.is-collapsed {
+  position: relative;
+}
+
+.site-header.is-collapsed .nav-toggle {
+  display: block;
+}
+
+.site-header.is-collapsed .site-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  flex-direction: column;
+  align-items: flex-start;  /* keep links aligned left */
+
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.site-header.is-collapsed .site-nav.open {
+  display: flex;
+}
+
+/* Clean list appearance */
+.site-header.is-collapsed .site-nav a {
+  margin: 0.5rem 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* Hide separators in collapsed mode */
+.site-header.is-collapsed .site-nav a:not(:last-child) {
+  border-right: none;
+}
+
