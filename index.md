@@ -5,7 +5,12 @@ title: Home
 
 ## Welcome to 
 
-# $$Ne^{P_e}/R_o$$
+<div class="home-logo-wrapper">
+  <img
+    src="{{ '/assets/images/logo.webp' | relative_url }}"
+    alt="NEPERO logo"
+    class="home-logo">
+</div>
 
 **Ne**twork of **P**r**e**carious **R**esearchers **o**rganization.
 
