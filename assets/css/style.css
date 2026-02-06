@@ -29,6 +29,24 @@
   border-right: 1px solid #999;
 }
 
+footer {
+  /* 
+  font-size: 80%;
+  font-family: Arial, serif;
+  */
+  color: #a6a2a0;
+  text-align: center;
+  margin-top: 6em;
+  border-top: 1px solid lightgrey;
+  padding-top: 2em;
+  margin-bottom: 4em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #a6a2a0;
+  text-decoration: underline;
+}
 
  
  /* Toggle button (hidden on desktop) */
