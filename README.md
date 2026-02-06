@@ -14,7 +14,7 @@ The website is built with [Jekyll](https://jekyllrb.com/docs/).
 	```
 	[^keyword]: Author. "[Title](https://doi.org/XX.XXXX/XXXXXXX)". In: *Journal* Vol, p. (YYYY)
 	```
-	In the markdown page where you want to link the article, use the keyword to link the article:
+	In the markdown page where you want to cite the article, use the keyword to link the bibliographic entry as a Markdown footnote:
 	```
 	example sentence.[^keyword]
 	```

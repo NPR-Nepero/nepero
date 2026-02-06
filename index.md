@@ -15,4 +15,5 @@ title: Home
 **Ne**twork of **P**r**e**carious **R**esearchers **o**rganization.
 
 - Visit the [**Manifesto**](manifesto) page to read our stance.
+- Visit the [**Recources**](resources) page to get information about precarity in academia.
 - Visit the [**Posts**](posts) page to see updates.
