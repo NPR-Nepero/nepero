@@ -19,7 +19,7 @@ categories: meetings
 ## Transcript
 - [Full transcript](../../Transcripts/2025-10-03.txt)
 
-## 1-page summary
+## Summary
 
 This kickoff session established both the political motivation and the practical operating style of the group. Participants described a shared frustration with contemporary academic work: high pressure to publish quickly, little room for exploratory or high-risk ideas, and precarious contracts that force short-term choices. Across different personal trajectories, the same issue emerged: scientific value and career value are often misaligned, and this gap pushes researchers to optimize for metrics rather than knowledge.
 

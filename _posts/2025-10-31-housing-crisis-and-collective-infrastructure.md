@@ -14,7 +14,7 @@ categories: meetings
 ## Transcript
 - [Full transcript](../../Transcripts/2025-10-31.txt)
 
-## 1-page summary
+## Summary
 
 This meeting connected two levels of precarity: immediate living conditions and long-term scientific governance. The opening focused on housing difficulties faced by researchers moving internationally, with concrete examples from relocation experiences and the lack of institutional support. Participants described high costs, low transparency, and dependence on informal networks as recurring barriers.
 

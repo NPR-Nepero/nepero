@@ -15,7 +15,7 @@ categories: meetings
 ## Transcript
 - [Full transcript](../../Transcripts/2025-11-28.txt)
 
-## 1-page summary
+## Summary
 
 This meeting started with practical updates from relocation and quickly moved to publishing governance after a high-profile conference review-management incident. Participants discussed how a breakdown in anonymity and process integrity can invalidate weeks of labor by authors and reviewers, especially in large-scale conference systems.
 

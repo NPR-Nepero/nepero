@@ -17,7 +17,7 @@ categories: meetings
 ## Transcript
 - [Full transcript](../../Transcripts/2026-01-09_ROAC.txt)
 
-## 1-page summary
+## Summary
 
 This meeting was a strategic dialogue with guests connected to the Radical Open Access Collective (ROAC). The conversation traced the genealogy of community-led open publishing from 1990s open-knowledge movements through more recent efforts to build non-commercial support structures for journals and collectives.
 

@@ -14,7 +14,7 @@ categories: meetings
 ## Transcript
 - [Full transcript](../../Transcripts/2026-01-23.txt)
 
-## 1-page summary
+## Summary
 
 This session opened with a broad reflection on geopolitical instability and its immediate effects on researchers' lives, mobility, and emotional bandwidth. Participants discussed how international crises and state violence reshape both personal trajectories and the practical conditions of academic work.
 

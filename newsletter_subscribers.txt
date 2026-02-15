@@ -1,0 +1,4 @@
+# NePeRo newsletter subscribers
+# One email per line.
+# Prefix with "-" for unsubscribed emails (history).
+
