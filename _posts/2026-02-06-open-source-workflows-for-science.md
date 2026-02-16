@@ -7,8 +7,8 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Mauro Pastore
+- Giampaolo
+- Mauro
 
 ## Transcript
 - [Full transcript](../../Transcripts/2026-02-06.txt)

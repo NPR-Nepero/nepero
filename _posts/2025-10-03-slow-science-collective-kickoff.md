@@ -7,12 +7,12 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Marco Baldovin
-- Mauro Pastore
-- Chen Liu
-- David Machado
-- Guido Giachetti
+- Giampaolo
+- Marco
+- Mauro
+- Chen
+- David
+- Guido
 - Dario
 - Alessandro
 

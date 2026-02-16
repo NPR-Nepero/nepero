@@ -7,9 +7,9 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Marco Baldovin
-- Chen Liu
+- Giampaolo
+- Marco
+- Chen
 
 ## Transcript
 - [Full transcript](../../Transcripts/2025-11-14.txt)

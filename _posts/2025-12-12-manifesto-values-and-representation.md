@@ -7,10 +7,10 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Marco Baldovin
-- Mauro Pastore
-- Francesco Arceri
+- Giampaolo
+- Marco
+- Mauro
+- Francesco
 
 ## Transcript
 - [Full transcript](../../Transcripts/2025-12-12.txt)

@@ -7,9 +7,9 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Mauro Pastore
-- Chen Liu
+- Giampaolo
+- Mauro
+- Chen
 
 ## Transcript
 - [Full transcript](../../Transcripts/2025-10-31.txt)

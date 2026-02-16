@@ -7,13 +7,13 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Marco Baldovin
-- Mauro Pastore
-- Chen Liu
-- David Machado
-- Francesco Arceri
-- Andrea Plati
+- Giampaolo
+- Marco
+- Mauro
+- Chen
+- David
+- Francesco
+- Andrea
 
 ## Transcript
 - [Full transcript](../../Transcripts/2025-10-17.txt)

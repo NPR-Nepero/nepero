@@ -7,9 +7,9 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Marco Baldovin
-- Mauro Pastore
+- Giampaolo
+- Marco
+- Mauro
 
 ## Transcript
 - [Full transcript](../../Transcripts/2026-01-23.txt)

@@ -7,10 +7,10 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Mauro Pastore
-- Chen Liu
-- David Machado
+- Giampaolo
+- Mauro
+- Chen
+- David
 
 ## Transcript
 - [Full transcript](../../Transcripts/2025-11-28.txt)

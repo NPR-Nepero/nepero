@@ -7,12 +7,12 @@ categories: meetings
 ---
 
 ## Participants
-- Giampaolo Folena
-- Marco Baldovin
-- Francesco Arceri
-- Chen Liu
-- Toby Steiner
-- Rebekka Kiesewetter
+- Giampaolo
+- Marco
+- Francesco
+- Chen
+- Toby
+- Rebekka
 
 ## Transcript
 - [Full transcript](../../Transcripts/2026-01-09_ROAC.txt)
