@@ -45,10 +45,15 @@ jobs:
           fi
 
           REMOTE_DIR="${FTP_REMOTE_DIR:-/nepero/}"
+          cat > .htaccess << 'EOF'
+          RewriteEngine On
+          RewriteRule ^$ /nepero/ [R=302,L]
+          EOF
 
           lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" -e "
             set ftp:ssl-allow no;
             set ssl:verify-certificate no;
-            mirror -R --delete --verbose _site/ $REMOTE_DIR;
+            put -O / .htaccess;
+            mirror -R --only-newer --delete --verbose _site/ $REMOTE_DIR;
             quit
           "
