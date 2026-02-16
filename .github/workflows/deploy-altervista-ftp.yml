@@ -1,0 +1,53 @@
+name: Deploy Website to Altervista FTP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: altervista-ftp-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+      - name: Upload _site to Altervista via FTP
+        env:
+          FTP_HOST: ${{ secrets.ALTERVISTA_FTP_HOST }}
+          FTP_USER: ${{ secrets.ALTERVISTA_FTP_USER }}
+          FTP_PASS: ${{ secrets.ALTERVISTA_FTP_PASS }}
+          FTP_REMOTE_DIR: ${{ secrets.ALTERVISTA_FTP_REMOTE_DIR }}
+        run: |
+          if [ -z "$FTP_HOST" ] || [ -z "$FTP_USER" ] || [ -z "$FTP_PASS" ]; then
+            echo "Missing required FTP secrets. Set ALTERVISTA_FTP_HOST, ALTERVISTA_FTP_USER, ALTERVISTA_FTP_PASS."
+            exit 1
+          fi
+
+          REMOTE_DIR="${FTP_REMOTE_DIR:-/}"
+
+          lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" -e "
+            set ftp:ssl-allow no;
+            set ssl:verify-certificate no;
+            mirror -R --delete --verbose _site/ $REMOTE_DIR;
+            quit
+          "
