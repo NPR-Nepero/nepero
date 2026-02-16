@@ -10,9 +10,11 @@ categories: meetings
 - Giampaolo
 - Mauro
 
+<!--
 ## Transcript
 - [Full transcript](../../Transcripts/2026-02-06.txt)
 
+-->
 ## Summary
 
 This meeting focused on operational method. Building on recent coordination with Marco, participants discussed how Nepero can adopt open-source style collaboration patterns for scientific work and organizational development.

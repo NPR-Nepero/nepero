@@ -15,9 +15,11 @@ categories: meetings
 - Francesco
 - Andrea
 
+<!--
 ## Transcript
 - [Full transcript](../../Transcripts/2025-10-17.txt)
 
+-->
 ## Summary
 
 This meeting shifted from general motivation to organizational design. The group discussed how to move from critique of the current publishing system to an implementable model for alternative journals. A key reference point was the ecosystem of radical and community-led open-access initiatives, especially those that provide not only publications but also practical toolkits for creating journals.

@@ -11,9 +11,11 @@ categories: meetings
 - Marco
 - Mauro
 
+<!--
 ## Transcript
 - [Full transcript](../../Transcripts/2025-12-29.txt)
 
+-->
 ## Summary
 
 This meeting focused on direct manifesto work. Participants reviewed a draft text and discussed tone, argumentative sequence, and political positioning. The core line that emerged is that precarious researchers are central to scientific production but structurally marginalized in decision-making, especially in publication economies dominated by private actors.

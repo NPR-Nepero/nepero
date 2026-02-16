@@ -12,9 +12,11 @@ categories: meetings
 - Mauro
 - Francesco
 
+<!--
 ## Transcript
 - [Full transcript](../../Transcripts/2025-12-12.txt)
 
+-->
 ## Summary
 
 This session brought the manifesto process into a more explicit drafting phase. Alongside personal updates about postdoc transitions and hiring dynamics, participants focused on how the collective should define itself publicly and what common ground can unite researchers across disciplines and institutional contexts.

@@ -11,9 +11,11 @@ categories: meetings
 - Marco
 - Chen
 
+<!--
 ## Transcript
 - [Full transcript](../../Transcripts/2025-11-14.txt)
 
+-->
 ## Summary
 
 This meeting blended personal career updates with strategic editorial work. Participants compared working conditions across national research systems, especially differences between Italy and Spain in funding cycles, contract structures, and opportunities for stabilization. While no system was presented as ideal, the conversation highlighted how institutional design strongly shapes day-to-day precarity.
