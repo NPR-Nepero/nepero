@@ -15,6 +15,7 @@ categories: meetings
 - Guido
 - Dario
 - Alessandro
+- Cristina
 
 <!--
 ## Transcript
