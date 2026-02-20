@@ -30,7 +30,7 @@ if ($status === "mail_sent") {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Join us - NePeRo</title>
+  <title>Join Us - NePeRo</title>
   <link rel="icon" type="image/webp" href="<?php echo htmlspecialchars($logoUrl, ENT_QUOTES, "UTF-8"); ?>">
   <link rel="stylesheet" href="<?php echo htmlspecialchars($cssUrl, ENT_QUOTES, "UTF-8"); ?>">
 </head>
@@ -48,13 +48,13 @@ if ($status === "mail_sent") {
         <a href="<?php echo htmlspecialchars($connectionsUrl, ENT_QUOTES, "UTF-8"); ?>">Connections</a>
         <a href="<?php echo htmlspecialchars($resourcesUrl, ENT_QUOTES, "UTF-8"); ?>">Resources</a>
         <a href="<?php echo htmlspecialchars($postsUrl, ENT_QUOTES, "UTF-8"); ?>">Posts</a>
-        <a href="<?php echo htmlspecialchars($joinUrl, ENT_QUOTES, "UTF-8"); ?>">Join us</a>
+        <a href="<?php echo htmlspecialchars($joinUrl, ENT_QUOTES, "UTF-8"); ?>">Join Us</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <h1>Join us</h1>
+    <h1>Join Us</h1>
     <p>Subscribe to the NePeRo newsletter to receive the latest summary of each meeting and updates on all activities carried out by NePeRo.</p>
     <p><small>A confirmation link will be sent by email. If you do not find it, check your spam folder.</small></p>
 

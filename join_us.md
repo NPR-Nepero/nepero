@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Join us
+title: Join Us
 permalink: /join_us_fallback.html
 ---
 
-## Join us
+# Join Us
 
 Subscribe to the NePeRo newsletter to receive the latest summary of each meeting and updates on all activities carried out by NePeRo.
 
@@ -39,7 +39,7 @@ function handleNewsletter(event, action) {
     : 'NePeRo newsletter request: unsubscribe';
   var body = 'Action: ' + action + '\nEmail: ' + email;
   alert('PHP is not available. Your email client will open to send the request.');
-  window.location.href = 'mailto:NPR-nepero@proton.me?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.location.href = 'mailto:subscribe@npr-nepero.org?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   return false;
 }
 </script>

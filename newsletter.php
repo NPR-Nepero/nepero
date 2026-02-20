@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 const SUBSCRIBERS_FILE = __DIR__ . "/newsletter_subscribers.txt";
+const CONTACT_EMAIL = "subscribe@npr-nepero.org";
 
 function base_url(): string
 {
@@ -39,24 +40,14 @@ function token_for(string $action, string $email): string
 
 function render_message(string $title, string $message): void
 {
-    $safeTitle = htmlspecialchars($title, ENT_QUOTES, "UTF-8");
     $safeMessage = htmlspecialchars($message, ENT_QUOTES, "UTF-8");
-    $base = base_url();
-    $joinUrl = htmlspecialchars($base . "/join_us.php", ENT_QUOTES, "UTF-8");
-    $homeUrl = htmlspecialchars($base . "/", ENT_QUOTES, "UTF-8");
-    $manifestoUrl = htmlspecialchars($base . "/manifesto.html", ENT_QUOTES, "UTF-8");
-    $createJournalUrl = htmlspecialchars($base . "/create_a_journal.html", ENT_QUOTES, "UTF-8");
-    $connectionsUrl = htmlspecialchars($base . "/connections.html", ENT_QUOTES, "UTF-8");
-    $resourcesUrl = htmlspecialchars($base . "/resources.html", ENT_QUOTES, "UTF-8");
-    $postsUrl = htmlspecialchars($base . "/posts.html", ENT_QUOTES, "UTF-8");
-    $logoUrl = htmlspecialchars($base . "/assets/images/logo.webp", ENT_QUOTES, "UTF-8");
-    $cssUrl = htmlspecialchars($base . "/assets/css/style.css", ENT_QUOTES, "UTF-8");
-
-    echo "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>{$safeTitle}</title><link rel=\"icon\" type=\"image/webp\" href=\"{$logoUrl}\"><link rel=\"stylesheet\" href=\"{$cssUrl}\"></head><body>";
-    echo "<header class=\"site-header\"><div class=\"header-inner\"><a href=\"{$homeUrl}\" class=\"site-logo\"><img src=\"{$logoUrl}\" alt=\"NePeRo logo\"></a><button class=\"nav-toggle\" aria-label=\"Toggle navigation\" aria-expanded=\"false\">☰</button><nav class=\"site-nav\"><a href=\"{$homeUrl}\">Home</a><a href=\"{$manifestoUrl}\">Manifesto</a><a href=\"{$createJournalUrl}\">Create a Journal</a><a href=\"{$connectionsUrl}\">Connections</a><a href=\"{$resourcesUrl}\">Resources</a><a href=\"{$postsUrl}\">Posts</a><a href=\"{$joinUrl}\">Join us</a></nav></div></header>";
-    echo "<main><h1>{$safeTitle}</h1><p>{$safeMessage}</p><p><small>If you expected a confirmation email, check your spam folder.</small></p><p><a href=\"{$joinUrl}\">Back to Join us</a></p></main>";
-    echo "<footer><p><a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a> NePeRo. Website built with <a href=\"https://jekyllrb.com/\">Jekyll</a></p></footer>";
-    echo "<script>const header=document.querySelector('.site-header');const nav=document.querySelector('.site-nav');const toggle=document.querySelector('.nav-toggle');function updateNavMode(){header.classList.remove('is-collapsed');nav.classList.remove('open');const links=Array.from(nav.children);if(links.length===0)return;const firstTop=links[0].offsetTop;const wrapped=links.some(link=>link.offsetTop>firstTop);header.classList.toggle('is-collapsed',wrapped);}toggle.addEventListener('click',()=>{nav.classList.toggle('open');toggle.setAttribute('aria-expanded',nav.classList.contains('open'));});window.addEventListener('resize',updateNavMode);window.addEventListener('load',updateNavMode);</script>";
+    $safeTitle = htmlspecialchars($title, ENT_QUOTES, "UTF-8");
+    $joinUrl = htmlspecialchars(base_url() . "/join_us.php", ENT_QUOTES, "UTF-8");
+    echo "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>{$safeTitle}</title></head><body>";
+    echo "<main style=\"max-width: 640px; margin: 3rem auto; padding: 0 1rem; text-align: center; font-family: sans-serif;\">";
+    echo "<p>{$safeMessage}</p>";
+    echo "<p><a href=\"{$joinUrl}\" style=\"display: inline-block; padding: 0.55rem 0.9rem; border: 1px solid #111; text-decoration: none; color: #111;\">Return to Join Us</a></p>";
+    echo "</main>";
     echo "</body></html>";
 }
 
@@ -186,7 +177,8 @@ $actionLabel = $action === "subscribe" ? "subscribe to" : "unsubscribe from";
 
 $subject = "Confirm newsletter request";
 $body = "Click this link to " . $actionLabel . " the NePeRo newsletter:\n\n" . $confirmUrl . "\n";
-$headers = "From: noreply@" . ($_SERVER["HTTP_HOST"] ?? "localhost") . "\r\n";
+$headers = "From: NePeRo Newsletter <" . CONTACT_EMAIL . ">\r\n";
+$headers .= "Reply-To: " . CONTACT_EMAIL . "\r\n";
 
 $sent = @mail($email, $subject, $body, $headers);
 if (!$sent) {
