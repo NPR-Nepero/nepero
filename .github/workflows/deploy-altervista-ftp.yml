@@ -57,5 +57,6 @@ jobs:
             mirror -R --only-newer --delete --verbose --exclude-glob *.php --exclude-glob newsletter_subscribers.txt _site/ $REMOTE_DIR;
             put -O $REMOTE_DIR newsletter.php;
             put -O $REMOTE_DIR join_us.php;
+            put -O $REMOTE_DIR weekly_subscribers_report.php;
             quit
           "
