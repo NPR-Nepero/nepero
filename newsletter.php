@@ -41,27 +41,35 @@ function render_message(string $title, string $message): void
 {
     $safeTitle = htmlspecialchars($title, ENT_QUOTES, "UTF-8");
     $safeMessage = htmlspecialchars($message, ENT_QUOTES, "UTF-8");
-    $joinUrl = htmlspecialchars(base_url() . "/join_us.php", ENT_QUOTES, "UTF-8");
+    $base = base_url();
+    $joinUrl = htmlspecialchars($base . "/join_us.php", ENT_QUOTES, "UTF-8");
+    $homeUrl = htmlspecialchars($base . "/", ENT_QUOTES, "UTF-8");
+    $manifestoUrl = htmlspecialchars($base . "/manifesto.html", ENT_QUOTES, "UTF-8");
+    $createJournalUrl = htmlspecialchars($base . "/create_a_journal.html", ENT_QUOTES, "UTF-8");
+    $connectionsUrl = htmlspecialchars($base . "/connections.html", ENT_QUOTES, "UTF-8");
+    $resourcesUrl = htmlspecialchars($base . "/resources.html", ENT_QUOTES, "UTF-8");
+    $postsUrl = htmlspecialchars($base . "/posts.html", ENT_QUOTES, "UTF-8");
+    $logoUrl = htmlspecialchars($base . "/assets/images/logo.webp", ENT_QUOTES, "UTF-8");
+    $cssUrl = htmlspecialchars($base . "/assets/css/style.css", ENT_QUOTES, "UTF-8");
 
-    echo "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>{$safeTitle}</title></head><body>";
-    echo "<main style=\"max-width: 720px; margin: 2rem auto; padding: 0 1rem; font-family: sans-serif;\">";
-    echo "<h1>{$safeTitle}</h1><p>{$safeMessage}</p><p><a href=\"{$joinUrl}\">Back to Join us</a></p>";
-    echo "</main></body></html>";
+    echo "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>{$safeTitle}</title><link rel=\"icon\" type=\"image/webp\" href=\"{$logoUrl}\"><link rel=\"stylesheet\" href=\"{$cssUrl}\"></head><body>";
+    echo "<header class=\"site-header\"><div class=\"header-inner\"><a href=\"{$homeUrl}\" class=\"site-logo\"><img src=\"{$logoUrl}\" alt=\"NePeRo logo\"></a><button class=\"nav-toggle\" aria-label=\"Toggle navigation\" aria-expanded=\"false\">☰</button><nav class=\"site-nav\"><a href=\"{$homeUrl}\">Home</a><a href=\"{$manifestoUrl}\">Manifesto</a><a href=\"{$createJournalUrl}\">Create a Journal</a><a href=\"{$connectionsUrl}\">Connections</a><a href=\"{$resourcesUrl}\">Resources</a><a href=\"{$postsUrl}\">Posts</a><a href=\"{$joinUrl}\">Join us</a></nav></div></header>";
+    echo "<main><h1>{$safeTitle}</h1><p>{$safeMessage}</p><p><small>If you expected a confirmation email, check your spam folder.</small></p><p><a href=\"{$joinUrl}\">Back to Join us</a></p></main>";
+    echo "<footer><p><a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a> NePeRo. Website built with <a href=\"https://jekyllrb.com/\">Jekyll</a></p></footer>";
+    echo "<script>const header=document.querySelector('.site-header');const nav=document.querySelector('.site-nav');const toggle=document.querySelector('.nav-toggle');function updateNavMode(){header.classList.remove('is-collapsed');nav.classList.remove('open');const links=Array.from(nav.children);if(links.length===0)return;const firstTop=links[0].offsetTop;const wrapped=links.some(link=>link.offsetTop>firstTop);header.classList.toggle('is-collapsed',wrapped);}toggle.addEventListener('click',()=>{nav.classList.toggle('open');toggle.setAttribute('aria-expanded',nav.classList.contains('open'));});window.addEventListener('resize',updateNavMode);window.addEventListener('load',updateNavMode);</script>";
+    echo "</body></html>";
 }
 
 function update_subscribers(string $action, string $email): bool
 {
-    $fp = fopen(SUBSCRIBERS_FILE, "c+");
-    if ($fp === false) {
-        return false;
+    if (!file_exists(SUBSCRIBERS_FILE)) {
+        $created = @file_put_contents(SUBSCRIBERS_FILE, "");
+        if ($created === false) {
+            return false;
+        }
     }
 
-    if (!flock($fp, LOCK_EX)) {
-        fclose($fp);
-        return false;
-    }
-
-    $existing = stream_get_contents($fp);
+    $existing = @file_get_contents(SUBSCRIBERS_FILE);
     if ($existing === false) {
         $existing = "";
     }
@@ -92,12 +100,10 @@ function update_subscribers(string $action, string $email): bool
         $newContent .= "\n";
     }
 
-    rewind($fp);
-    ftruncate($fp, 0);
-    $ok = fwrite($fp, $newContent);
-    fflush($fp);
-    flock($fp, LOCK_UN);
-    fclose($fp);
+    $ok = @file_put_contents(SUBSCRIBERS_FILE, $newContent, LOCK_EX);
+    if ($ok === false) {
+        $ok = @file_put_contents(SUBSCRIBERS_FILE, $newContent);
+    }
     return $ok !== false;
 }
 
