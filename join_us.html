@@ -1,0 +1,47 @@
+---
+layout: default
+title: Join us
+permalink: /join_us.html
+---
+
+## Join us
+
+<p id="join-router-status">Checking newsletter module availability...</p>
+
+<noscript>
+  <p>
+    JavaScript is required to detect PHP availability.
+    Open the fallback page: <a href="{{ '/join_us_fallback.html' | relative_url }}">Join us (fallback)</a>.
+  </p>
+</noscript>
+
+<script>
+(function () {
+  var status = document.getElementById('join-router-status');
+  var phpUrl = "{{ '/join_us.php' | relative_url }}";
+  var healthUrl = "{{ '/newsletter.php?mode=health' | relative_url }}";
+  var fallbackUrl = "{{ '/join_us_fallback.html' | relative_url }}";
+
+  function go(url) {
+    window.location.replace(url);
+  }
+
+  fetch(healthUrl, { cache: "no-store" })
+    .then(function (res) {
+      if (!res.ok) throw new Error("Health check failed");
+      return res.text();
+    })
+    .then(function (body) {
+      if (body.trim() === "ok") {
+        status.textContent = "PHP module available. Redirecting...";
+        go(phpUrl);
+      } else {
+        throw new Error("Unexpected health response");
+      }
+    })
+    .catch(function () {
+      status.textContent = "PHP module unavailable. Redirecting to fallback page...";
+      go(fallbackUrl);
+    });
+})();
+</script>

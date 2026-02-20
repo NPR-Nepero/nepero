@@ -54,6 +54,8 @@ jobs:
             set ftp:ssl-allow no;
             set ssl:verify-certificate no;
             put -O / .htaccess;
-            mirror -R --only-newer --delete --verbose _site/ $REMOTE_DIR;
+            mirror -R --only-newer --delete --verbose --exclude-glob *.php _site/ $REMOTE_DIR;
+            put -O $REMOTE_DIR newsletter.php;
+            put -O $REMOTE_DIR join_us.php;
             quit
           "
