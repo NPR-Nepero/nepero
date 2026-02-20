@@ -60,18 +60,40 @@ function render_message(string $title, string $message): void
     echo "</body></html>";
 }
 
-function update_subscribers(string $action, string $email): bool
+function ensure_subscribers_file(string &$error): bool
 {
-    if (!file_exists(SUBSCRIBERS_FILE)) {
-        $created = @file_put_contents(SUBSCRIBERS_FILE, "");
+    $path = SUBSCRIBERS_FILE;
+
+    if (!file_exists($path)) {
+        $created = @file_put_contents($path, "");
         if ($created === false) {
+            $error = "Cannot create subscribers file.";
             return false;
         }
     }
 
+    if (!is_writable($path)) {
+        @chmod($path, 0666);
+    }
+
+    if (!is_writable($path)) {
+        $error = "Subscribers file is not writable.";
+        return false;
+    }
+
+    return true;
+}
+
+function update_subscribers(string $action, string $email, string &$error): bool
+{
+    if (!ensure_subscribers_file($error)) {
+        return false;
+    }
+
     $existing = @file_get_contents(SUBSCRIBERS_FILE);
     if ($existing === false) {
-        $existing = "";
+        $error = "Cannot read subscribers file.";
+        return false;
     }
 
     $lines = preg_split("/\r\n|\n|\r/", $existing);
@@ -104,7 +126,11 @@ function update_subscribers(string $action, string $email): bool
     if ($ok === false) {
         $ok = @file_put_contents(SUBSCRIBERS_FILE, $newContent);
     }
-    return $ok !== false;
+    if ($ok === false) {
+        $error = "Cannot write subscribers file.";
+        return false;
+    }
+    return true;
 }
 
 $mode = $_GET["mode"] ?? "";
@@ -130,8 +156,9 @@ if (isset($_GET["confirm"]) && $_GET["confirm"] === "1") {
         exit;
     }
 
-    if (!update_subscribers($action, $email)) {
-        render_message("Write error", "Could not update newsletter_subscribers.txt.");
+    $writeError = "";
+    if (!update_subscribers($action, $email, $writeError)) {
+        render_message("Write error", "Could not update newsletter_subscribers.txt. " . $writeError);
         exit;
     }
 
