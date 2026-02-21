@@ -78,7 +78,6 @@ if ($status === "mail_sent") {
       <button type="submit">Unsubscribe</button>
     </form>
 
-    <p><small>The list is stored in <code>newsletter_subscribers.txt</code> on this server.</small></p>
   </main>
 
   <footer>

@@ -176,11 +176,18 @@ $confirmUrl = base_url() . "/newsletter.php?confirm=1&action=" . rawurlencode($a
 $actionLabel = $action === "subscribe" ? "subscribe to" : "unsubscribe from";
 
 $subject = "Confirm newsletter request";
-$body = "Click this link to " . $actionLabel . " the NePeRo newsletter:\n\n" . $confirmUrl . "\n";
+$safeConfirmUrl = htmlspecialchars($confirmUrl, ENT_QUOTES, "UTF-8");
+$htmlBody = "<!doctype html><html lang=\"en\"><body style=\"font-family:Arial,sans-serif;line-height:1.45;\">";
+$htmlBody .= "<p>You requested to " . htmlspecialchars($actionLabel, ENT_QUOTES, "UTF-8") . " the NePeRo newsletter.</p>";
+$htmlBody .= "<p><a href=\"" . $safeConfirmUrl . "\" style=\"display:inline-block;padding:10px 14px;border:1px solid #111;color:#111;text-decoration:none;\">Confirm request</a></p>";
+$htmlBody .= "<p>If you did not request this action, you can ignore this email.</p>";
+$htmlBody .= "</body></html>";
 $headers = "From: NePeRo Newsletter <" . CONTACT_EMAIL . ">\r\n";
 $headers .= "Reply-To: " . CONTACT_EMAIL . "\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-$sent = @mail($email, $subject, $body, $headers);
+$sent = @mail($email, $subject, $htmlBody, $headers);
 if (!$sent) {
     header("Location: " . base_url() . "/join_us.php?status=mail_error");
     exit;
