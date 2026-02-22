@@ -10,4 +10,8 @@
 
 [^micoli2018history]: K. Micoli, Steve Wendell. "[History and Evolution of the Postdoctoral Scholar in the United States](https://doi.org/10.1016/B978-0-12-813169-5.00001-X)". In: *The Postdoc Landscape* Chapter 1, 1-13, Academic Press (2018)
 
+[^bush1945frontier]: V. Bush. "[Science, the Endless Frontier: a Report to the President](https://nsf-gov-resources.nsf.gov/2023-04/EndlessFrontier75th_w.pdf)". US Government Printing Office, Washington, DC (1945)
+
+[^nas2000]: National Academy of Sciences, National Academy of Engineering, Institute of Medicine. "[Enhancing the Postdoctoral Experience for Scientists and Engineers: A Guide for Postdoctoral Scholars, Advisers, Institutions, Funding Organizations, and Disciplinary Societies](https://doi.org/10.17226/9831)" ([eBook](https://www.ncbi.nlm.nih.gov/sites/books/NBK547069/)). The National Academies Press, Washington, DC (2000)
+
 [^balter1999europe]: M. Balter. "[Europeans Who Do Postdocs Abroad Face Reentry Problems](https://doi.org/10.1126/science.285.5433.1524)". In: *Science* 285, 1524-1526 (1999)
