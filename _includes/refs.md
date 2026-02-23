@@ -14,4 +14,8 @@
 
 [^nas2000]: National Academy of Sciences, National Academy of Engineering, Institute of Medicine. "[Enhancing the Postdoctoral Experience for Scientists and Engineers: A Guide for Postdoctoral Scholars, Advisers, Institutions, Funding Organizations, and Disciplinary Societies](https://doi.org/10.17226/9831)" ([eBook](https://www.ncbi.nlm.nih.gov/sites/books/NBK547069/)). The National Academies Press, Washington, DC (2000)
 
+[^ncses2025sed]: National Center for Science and Engineering Statistics (NCSES). "[Doctorate Recipients from U.S. Universities: 2024 Data Tables](https://ncses.nsf.gov/surveys/earned-doctorates/2024)" NSF 25-349. Alexandria, VA: US National Science Foundation (2025)
+
+[^ncses2026sgspse]: National Center for Science and Engineering Statistics (NCSES). "[Survey of Graduate Students and Postdoctorates in Science and Engineering: Fall 2024](https://ncses.nsf.gov/surveys/graduate-students-postdoctorates-s-e/2024)". NSF 26-307. Alexandria, VA: US National Science Foundation (2026)
+
 [^balter1999europe]: M. Balter. "[Europeans Who Do Postdocs Abroad Face Reentry Problems](https://doi.org/10.1126/science.285.5433.1524)". In: *Science* 285, 1524-1526 (1999)

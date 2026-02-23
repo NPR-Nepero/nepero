@@ -54,6 +54,18 @@ footer a {
   display: none;
 }
 
+.chart-figure {
+  max-width:600px;
+}
+
+.chart-figure figcaption {
+  text-align:left;
+  font-size:0.9em;
+  color:#555;
+}
+
+.chart-figure canvas {
+}
 
 /* ===== Collapsed (mobile) navigation ===== */
 
