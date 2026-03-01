@@ -19,3 +19,15 @@
 [^ncses2026sgspse]: National Center for Science and Engineering Statistics (NCSES). "[Survey of Graduate Students and Postdoctorates in Science and Engineering: Fall 2024](https://ncses.nsf.gov/surveys/graduate-students-postdoctorates-s-e/2024)". NSF 26-307. Alexandria, VA: US National Science Foundation (2026)
 
 [^balter1999europe]: M. Balter. "[Europeans Who Do Postdocs Abroad Face Reentry Problems](https://doi.org/10.1126/science.285.5433.1524)". In: *Science* 285, 1524-1526 (1999)
+
+[^ustatPhD]: Servizio Statistico del Ministero dell'Università e della Ricerca. "[Diplomati Dottorati di ricerca. Dati nazionali - Serie Storica](https://dati-ustat.mur.gov.it/dataset/99c3fde2-d329-4e43-9116-9c8917680061/resource/9e943195-d3ef-4aa2-b7d3-375c03c2d224/download/10-dottorati_diplomati_anno.csv)" (2024)
+
+[^ustatFaculty]: Servizio Statistico del Ministero dell'Università e della Ricerca. "[Personale docente e ricercatore per genere e qualifica](https://dati-ustat.mur.gov.it/dataset/1775dfd1-5408-4970-95c2-97373b7a0016/resource/85c1ab95-c8db-484b-8898-56478c521721/download/docricxgenerequalifica_serie.csv)" (2024)
+
+[^roarsPrecari]: Readazione ROARS. "[I precari dell’università italiana](https://www.roars.it/i-precari-delluniversita-italiana/)" (2025)
+
+
+
+
+
+
