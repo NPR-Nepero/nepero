@@ -21,20 +21,25 @@ Although the trajectory of precarious employment in academia has varied across c
   <canvas id="chartUSphds"></canvas>
   <figcaption >
   <p markdown="1">
-**Figure 1.** United States, evolution of the total number of doctorate recipients per year in research (mainly PhDs; professional doctoral degrees, such as MD, DDS, DVM, JD, DPharm, DMin, and PsyD, are excluded),[^ncses2025sed] postodctoral appointees per year in science, engineering, health (defined as those who (i) hold a recent doctoral degree or first-professional degree in a medical or related field and (ii) have a limited-term appointment)[^ncses2026sgspse] and other doctorate-holding nonfaculty researchers in science, engineering, health (all those who are not considered either postdocs or members of the faculty)[^ncses2026sgspse] in the United States. Census data.
+**Figure 1.** **United States**, evolution of the total number of doctorate recipients per year in research (mainly PhDs; professional doctoral degrees, such as MD, DDS, DVM, JD, DPharm, DMin, and PsyD, are excluded),[^ncses2025sed] postodctoral appointees per year in science, engineering, health (defined as those who (i) hold a recent doctoral degree or first-professional degree in a medical or related field and (ii) have a limited-term appointment)[^ncses2026sgspse] and other doctorate-holding nonfaculty researchers in science, engineering, health (all those who are not considered either postdocs or members of the faculty)[^ncses2026sgspse] in the United States. Census data.
 </p>
   </figcaption>
 </figure>
 
 **France.** The postdoctoral scolarship was introduced in French academia much later than the above cases, given that, even in 1999, the country was maintaining "a 3-decade-old policy that says it would be unfair to offer people temporary posts with no promise of permanent employment".[^balter1999europe]
 
-**Italy.**
+**Italy.** Despite some earlier signs (adjunct professors established by law 382/1980, research fellows by law 449/1997), in Italy academic precarity became a widespread reality starting from the 2000s, in few well-documented steps:[^villani2025italy]
+- law 230/2005 (*Moratti reform*). It introduced the fixed-term research contract (3+3 years) in Italian academia.
+- law 133/2008. Among drastic measures to cut public spending, it reduced funding for universities and set the threshold for hiring staff to replace retirements at 50%.
+- law 240/2010 (*Gelmini reform*). It abolished the position of permanent researcher, introducing two kinds of fixed-term research contracts (superseding the Moratti's one): type A ("RTDA", 3+2 years, not on tenure track) and type B ("RTDB", 3 years, on tenure track). The number of RTBs always remained limited (see Figure 2). The law also redefined the research fellowships ("assegni di ricerca", 1-3 years).
+- law 79/2022 (from law-decree 36/2022 *PNRR 2*).
+
 
 <figure class="chart-figure">
   <canvas id="chartITpersonnel"></canvas>
   <figcaption >
   <p markdown="1">
-**Figure 2.** Italy, evolution of the academic personnel: doctorate recipients per year,[^ustatPhD] nonpermanent not-on-tenure-track personnel ("Assegnisti di ricerca" + "RTDA"), nonpermanent on-tenure-track personnel ("RTDB" + "RTT"), permanent faculty (full professors + associate professor + permanent researchers).[^ustatFaculty] [^roarsPrecari]
+**Figure 2.** **Italy**, evolution of the academic personnel: doctorate recipients per year,[^ustatPhD] nonpermanent not-on-tenure-track personnel ("Assegnisti di ricerca" + "RTDA"), nonpermanent on-tenure-track personnel ("RTDB" + "RTT"), permanent faculty (full professors + associate professors + permanent researchers).[^ustatFaculty] [^roarsPrecari]
 </p>
   </figcaption>
 </figure>

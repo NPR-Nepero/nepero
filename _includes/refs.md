@@ -26,7 +26,7 @@
 
 [^roarsPrecari]: Readazione ROARS. "[I precari dell’università italiana](https://www.roars.it/i-precari-delluniversita-italiana/)" (2025)
 
-
+[^villani2025italy]: M. Villani. "[Early Career Academics in Italia: scenari in divenire delle riforme del pre-ruolo](https://romatrepress.uniroma3.it/wp-content/uploads/2025/05/7.-Villani.pdf)". In [L'università dall'autonomia all'eteronomia](https://dx.doi.org/10.13134/979-12-5977-462-0)", Roma Tre-Press (2025)
 
 
 
