@@ -28,6 +28,12 @@
 
 [^villani2025italy]: M. Villani. "[Early Career Academics in Italia: scenari in divenire delle riforme del pre-ruolo](https://romatrepress.uniroma3.it/wp-content/uploads/2025/05/7.-Villani.pdf)". In [L'università dall'autonomia all'eteronomia](https://dx.doi.org/10.13134/979-12-5977-462-0)", Roma Tre-Press (2025)
 
+[^agrigep]: K. Paksi, K. Tardos. "[Gender and Precarity in Academia](https://agrigep.eu/wp-content/uploads/2024/12/AGRIGEP_Fact_Sheet_WomenPrecarity_2024_0829_clear_version2.pdf)". AGRIGEP factsheet n°5, Horizon Europe
+project (2024)
 
+[^biglia]: B. Biglia, J. B. Martí. “[Precarity](https://doi.org/10.1007/978-1-4614-5583-7_230)”. In: Encyclopedia of Critical Psychology, pp. 1488–1491, Springer New York (2014)
 
+[^euparl]: "[European Parliament resolution of 4 July 2017 on working conditions and precarious employment](https://www.europarl.europa.eu/doceo/document/TA-8-2017-0290_EN.html) (2017)
+
+[^negri2005multitude]: A. Negri, M. Hardt, D. Camfield. "Multitude: war and democracy in the age of empire". In: Labour 56, p. 359 (2005)
 

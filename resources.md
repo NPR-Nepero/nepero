@@ -11,6 +11,10 @@ title: Resources
 
 The main obstacle in defining precarious work in higher education and research is the diversity of its forms in different countries, domain of research and even institutions,[^akerlind2005] [^eua2024report] and the resulting lack of aggregated data worldwide.[^oecd2021reducing]
 
+Precarity is an elusive concept. Loosely speaking, it identifies the condition of a social class, still forming,[^agrigep] that is characterized by existential instability and absence of long-term perspectives. The word may refer either to psychological and socio-economical aspects, which are often related.[^biglia] Concerning the latter, the European Parliament identifies precarious work as *employment which does not comply with EU, international and national standards and laws and/or does not provide sufficient resources for a decent life or adequate
+social protection*.[^euparl]
+While the definition of precariousness may not be unique, and depend on the context, it is commonly recognized that the phenomenon is related to the rise of neoliberal economic policies. Italian post-operaist thinkers considered precarity as the collective identity around which social mobilitation should be built.[^negri2005multitude]
+
 ### How we got here
 
 Although the trajectory of precarious employment in academia has varied across countries, the majority of studies reports a pronounced increase in postdoctoral positions during the second half of the twentieth century, following earlier implementations in the United States[^mervis1999science] and United Kingdom.[^wikiJRF]
