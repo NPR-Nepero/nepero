@@ -10,6 +10,7 @@ $createJournalUrl = $basePath . "/create_a_journal.html";
 $connectionsUrl = $basePath . "/connections.html";
 $resourcesUrl = $basePath . "/resources.html";
 $postsUrl = $basePath . "/posts.html";
+$wallUrl = $basePath . "/wall.html";
 $joinUrl = $basePath . "/join_us.html";
 $logoUrl = $basePath . "/assets/images/logo.webp";
 $cssUrl = $basePath . "/assets/css/style.css";
@@ -48,6 +49,7 @@ if ($status === "mail_sent") {
         <a href="<?php echo htmlspecialchars($connectionsUrl, ENT_QUOTES, "UTF-8"); ?>">Connections</a>
         <a href="<?php echo htmlspecialchars($resourcesUrl, ENT_QUOTES, "UTF-8"); ?>">Resources</a>
         <a href="<?php echo htmlspecialchars($postsUrl, ENT_QUOTES, "UTF-8"); ?>">Posts</a>
+        <a href="<?php echo htmlspecialchars($wallUrl, ENT_QUOTES, "UTF-8"); ?>">Wall</a>
         <a href="<?php echo htmlspecialchars($joinUrl, ENT_QUOTES, "UTF-8"); ?>">Join Us</a>
       </nav>
     </div>
