@@ -7,7 +7,7 @@ title: Manifesto
 
 # NEPERO Manifesto: reclaim science from the bottom
 
-We are a precarious researchers.
+We are precarious researchers.
 
 We move. We restart. We adapt.
 And because we move, we are rarely allowed to decide.
