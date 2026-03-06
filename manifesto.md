@@ -5,7 +5,7 @@ title: Manifesto
 
 > -to be updated-
 
-## NEPERO Manifesto: reclaim science from the bottom
+# NEPERO Manifesto: reclaim science from the bottom
 
 We are a precarious researchers.
 
