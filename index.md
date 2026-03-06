@@ -3,7 +3,7 @@ layout: default
 title: NePeRo
 ---
 
-## Welcome to 
+# Welcome to 
 
 <div class="home-logo-wrapper">
   <img

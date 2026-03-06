@@ -3,7 +3,7 @@ layout: default
 title: Connections
 ---
 
-## Connections
+# Connections
 
 ### Radical Open Access Collective (ROAC)
 

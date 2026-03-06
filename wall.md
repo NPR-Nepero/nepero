@@ -3,7 +3,7 @@ layout: default
 title: Wall
 ---
 
-## Wall
+# Wall
 
 The Wall of Ideas is a collaborative space where people can share projects they would like to implement and find colleagues, collaborators, or other people interested in working together.
 
