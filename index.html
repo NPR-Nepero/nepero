@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Physics Forum</title>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script>
+    const supabase = supabase.createClient(
+      "https://YOUR_PROJECT_ID.supabase.co",
+      "YOUR_PUBLIC_ANON_KEY"
+    );
+
+    async function loginWithGitHub() {
+      await supabase.auth.signInWithOAuth({ provider: "github" });
+    }
+
+    async function checkUser() {
+      const { data: { user } } = await supabase.auth.getUser();
+
+      if (!user) {
+        document.getElementById("login").style.display = "block";
+        return;
+      }
+
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("id")
+        .eq("id", user.id)
+        .single();
+
+      if (!profile) {
+        window.location.href = "orcid.html";
+      } else {
+        document.getElementById("content").style.display = "block";
+      }
+    }
+
+    checkUser();
+  </script>
+</head>
+<body>
+  <button id="login" style="display:none" onclick="loginWithGitHub()">
+    Login with GitHub
+  </button>
+
+  <div id="content" style="display:none">
+    <h1>Welcome to the Physics Forum</h1>
+    <p>Here you will see forum content after login and ORCID linking.</p>
+  </div>
+</body>
+</html>
