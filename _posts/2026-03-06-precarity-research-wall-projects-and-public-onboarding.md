@@ -16,7 +16,7 @@ categories: meetings
 - [Full transcript](../../Transcripts/2026-03-06.txt)
 
 -->
-## 1-page summary
+## Summary
 
 This meeting opened in a tense political and emotional atmosphere, with discussion of war, bombardment, and the concrete effects that large-scale violence can have on the lives and mental stability of researchers and their families. As in earlier sessions, this was not treated as a separate issue from academic precarity, but as part of the wider instability within which scientific work and collective organizing now take place.
 

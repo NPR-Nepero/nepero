@@ -15,7 +15,7 @@ categories: meetings
 - [Full transcript](../../Transcripts/2026-02-20.txt)
 
 -->
-## 1-page summary
+## Summary
 
 This meeting combined two priorities: strengthening the analytical basis of Nepero's public narrative and finalizing concrete website and governance choices. Marco opened with a personal update that his long-awaited two-year research contract had finally started, after a period of unemployment. This framed the discussion in practical terms: progress on the initiative depends on members working under unstable and changing labor conditions.
 
