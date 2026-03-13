@@ -32,7 +32,7 @@ Although the trajectory of precarious employment in academia has varied across c
 
 **France.** The postdoctoral scolarship was introduced in French academia much later than the above cases, given that, even in 1999, the country was maintaining "a 3-decade-old policy that says it would be unfair to offer people temporary posts with no promise of permanent employment".[^balter1999europe]
 
-**Italy.** Despite some earlier signs (adjunct professors established by law 382/1980, research fellows by law 449/1997), in Italy academic precarity became a widespread reality starting from the 2000s, in few well-documented steps:[^villani2025italy]
+**Italy.** Despite some earlier signs (adjunct professors established by law 382/1980, research fellows by law 449/1997), in Italy precarity became a widespread reality in Universities starting from the 2000s, in few well-documented steps:[^villani2025italy]
 - law 230/2005 (*Moratti reform*). It introduced the fixed-term research contract (3+3 years) in Italian academia.
 - law 133/2008. Among drastic measures to cut public spending, it reduced funding for universities and set the threshold for hiring staff to replace retirements at 50%.
 - law 240/2010 (*Gelmini reform*). It abolished the position of permanent researcher, introducing two kinds of fixed-term research contracts (superseding the Moratti's one): type A ("RTDA", 3+2 years, not on tenure track) and type B ("RTDB", 3 years, on tenure track). The number of RTBs always remained limited (see Figure 2). The law also redefined the research fellowships ("assegni di ricerca", 1-3 years).
