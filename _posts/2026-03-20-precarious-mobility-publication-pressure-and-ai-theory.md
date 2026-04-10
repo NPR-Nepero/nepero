@@ -10,9 +10,10 @@ categories: meetings
 - Giampaolo
 - Mauro
 
+<!--
 ## Transcript
 - [Full transcript](../../Transcripts/2026-03-20.txt)
-
+-->
 ## 1-page summary
 
 This meeting took place in a reduced format, with Giampaolo Folena and Mauro Pastore using the time for a more open discussion that moved between immediate career pressures, the internal logic of academic precarity, and broader questions about the direction of contemporary research. It was a less operational meeting than some of the previous ones, but still strongly connected to NePeRo's core themes: how institutional constraints shape what kinds of science can be done, and under what conditions researchers are able to think freely.
