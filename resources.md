@@ -50,6 +50,20 @@ Although the trajectory of precarious employment in academia has varied across c
 
 ### What to do?
 
+The problem of precariousness in academia has been widely investigated in several institutional reports[^janger2022wifo] [^oecd2021reducing]. It is estimated that, as per 2019, 40% of academic researchers in the EU are on fixed-term contract, a share that rises to 86% for people below the age of 35. In the industry, fixed-term contracts are only 8% of the total. It is argued that precarious employment conditions lead to risk aversion, ultimately affecting the outcomes of research as a whole.
+
+One of the key observation in[^janger2022wifo] is that academics *like* their jobs, and this explains why they accept bearing long periods of precariousness. Also, they usually prefer to search for an academic job abroad than to settle for an industry job in their own country. This is partly due to the fact that the amount of time and effort invested in getting a PhD is not usually rewarded by jobs in non-academic contexts, because the skills acquired in research are not directly transferable to other sectors.
+
+The report proposes a series of policies that might be adopted to mitigate the incidence of precariousness in research. The idea is to achieve a "better balance between the supply of and demand for researchers, leading to less precarious careers and jobs and hence improved well-being of researchers". 
+One possible intervention concerns the lack of awareness by PhD candidates about the job market. This aspect can be improved by providing better information during the PhD and early postdoc years. At the same time, young researchers should be provided with transferable skills to be used also in other working contexts. Of course, such measures require structured PhD programmes, by contrast with less formal PhDs relying on bilateral Master-Apprentice relationships. 
+The beneficial role of PhD and postdoc associations, as well as national and international coordination platforms, is also analyzed.
+
+On the economical side, public budget for research should be distributed in time taking into account the future availability of researchers in the different fields. The goal of this measure is to avoid "stop-and-go" funding and ensure *predictability* of the available resources.
+A key issue faced in the report concerns the possibility to increase demand for researchers. This goal can be obtained by strengthening the role of research in the private sector, and by introducing new career paths in academia to flank professors and researchers (e.g., data specialists, technicians...).
+Of course, improving the working conditions of the precarious researchers is also a must. It is however noticed that this kind of policy, by itself, would lead to increase the costs of research workers, negatively affecting demand. 
+
+Additional considerations are developed in[^oecd2021reducing]. Among the measures that do not require additional investments, it is argued that transparency in recruitment procedures, predictability of future prospects, promotion of diversity and support of international mobility are key factors to improve the working conditions of precarious researchers. Another important aspect concerns the evaluation criteria for research funding. A way to improve the working conditions of precarious researchers is to reward research institutions with high quality of the research environment and sensible support of career development,  avoiding fund allocation schemes merely driven by routine quantitative performance metrics based on publication records.
+
 ---
 
 {% include refs.md %}

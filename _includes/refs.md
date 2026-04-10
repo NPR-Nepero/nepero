@@ -36,3 +36,4 @@
 
 [^negri2005multitude]: A. Negri, M. Hardt, D. Camfield. "[Multitude: War and Democracy in the Age of Empire](https://www.google.com/search?tbm=bks&q=isbn:1594200246)". In: Labour 56, p. 359 (2005)
 
+[^janger2022wifo]: J. Janger et al. "[Precarious Careers in Research. Analysis and Policy Options.](https://ideas.repec.org/b/wfo/wstudy/70473.html)" WIFO Studies 70473. (2022)
