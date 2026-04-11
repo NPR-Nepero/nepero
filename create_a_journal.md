@@ -14,3 +14,4 @@ title: Create a journal
 Open Journal Systems (OJS), developed by the Public Knowledge Project (PKP), is an open source platform for managing and publishing scholarly journals. It supports the full editorial workflow, including submissions, peer review, editing, publication, and indexing.
 
 - OJS (PKP): [https://pkp.sfu.ca/software/ojs/](https://pkp.sfu.ca/software/ojs/)
+- Installation notes: [OJS installation notes]({{ '/journal/ojs-install-notes.html' | relative_url }})

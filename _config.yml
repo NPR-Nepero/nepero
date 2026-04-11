@@ -5,3 +5,7 @@ theme: minima
 
 markdown: kramdown
 baseurl: "/nepero"
+
+collections:
+  journal:
+    output: true
