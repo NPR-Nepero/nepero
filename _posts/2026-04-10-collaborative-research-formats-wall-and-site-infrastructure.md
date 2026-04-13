@@ -16,7 +16,7 @@ categories: meetings
 ## Transcript
 - [Full transcript](../../Transcripts/2026-04-10.txt)
 -->
-## 1-page summary
+## Summary
 
 This meeting combined political discussion, conceptual development, and practical implementation. The starting point was a shared frustration with the way research funding is organized around highly individualized leadership models: one person accumulates resources, defines the agenda, and then recruits precarious researchers into subordinate roles. From there, the group asked a sharper question than in earlier meetings: what would an actual collaborative alternative look like if it were designed from the perspective of precarious researchers themselves?
 
